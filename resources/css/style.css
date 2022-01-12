@@ -245,34 +245,39 @@ button:hover {
 }
 
 /* Third Second */
+
+#background {
+    background-color: lightgrey;
+}
+
 #third-section {
     font-family: 'Roboto Slab', sans-serif;
-    font-weight:300;
-    font-size: 40px;
+    font-weight:400;
+    font-size: 30px;
     position: relative;
     top: 70px;
     text-align: center;
     background-color: lightgrey;
+    
 }
 
 #container_grid {
-    width: 800px;
+    width: 100%;
     position: relative;
     top: 80px;
     display: inline-grid;
-    grid-template-columns: auto auto auto;
-    padding: 72px;
+    grid-template-columns: 300px 300px 300px;
     background-color: lightgrey;
-}
-
-.cell {
-    padding: 10px;
-    text-align: center;
+    justify-content: center;
+    padding: 0 72px 32px 72px;
+    grid-gap: 10px;
+       
 }
 
 .cell img {
-    width: auto;
+    width: 300px;
     height: auto;
+    
 }
 
 .cell h5 {
@@ -280,4 +285,5 @@ button:hover {
     cursor: pointer;
     text-align: center;
 }
+
 
