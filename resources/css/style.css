@@ -1,23 +1,42 @@
-html {
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Navigation */
+
+li, a, button {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+
 }
 
 header {
-    margin: 10px 24px;
-    height: 20px;
-    width: 100%;
-    padding: 5px;
-    display: inline-block;
-    position: fixed;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding: 10px 24px;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 2;
 }
 
 .logo-image {
-    position:relative;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 200;
     height: 32px;
     display: flex;
-    float: left;
-    margin: 0;
+    cursor: pointer;
+    margin-right: auto;
+    
 }
 
 .black-ch {
@@ -34,26 +53,51 @@ header {
     align-self: center;
 }
 
-nav {
-    margin: 0;
-    overflow: hidden;
-    float: right;
-       
+.nav_links {
+    list-style: none;
 }
 
-nav a {
-    padding: 8px;
-    text-decoration: none;
-    line-height: 2;
-    align-self: center;
+.nav_links li {
+    display: inline-block;
+    padding: 0px 16px;
+}
+
+.nav_links a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links a:hover {
+    color: lightskyblue;
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: lightskyblue;
+    border: none;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: lightsteelblue;
+}
+
+/* First section */
+
+#banner {
+    background-color: lightgrey;
+    padding: 16px;
+    position: relative;
+    top: 64px;
+    width: 100%;
+}
+
+#banner img {
+    height:auto;
+    width: 60%;
     
 }
 
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+
