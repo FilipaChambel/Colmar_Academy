@@ -340,27 +340,44 @@ button:hover {
 .item1 {
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row: 2/3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .item2 {
+    background-color: lightgrey;
     grid-column: 3;
     grid-row:2;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    
 }
 
 .item3 {
+    background-color: lightgrey;
     grid-column: 3;
-    grid-row: 3;
+    grid-row: 2;
+    position: relative;
+    top: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    
 }
 
 #container-video {
     position: relative;
     top: 150px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 60% auto 40%;
     gap: 10px;
-    grid-auto-rows: minmax(100px, auto)
+    grid-auto-rows: minmax(100px, auto);
+    margin: 24px;
 }
+
 
 #container-video h3 {
     font-family: 'Roboto Slab', sans-serif;
@@ -369,26 +386,44 @@ button:hover {
     
 }
 
-video {
+#container-video video {
     width: 100%;
     height: auto;
 }
 
 .item1 h4 {
     font-family: 'Roboto Slab', sans-serif;
-    font-weight:300;
-    font-size: 16px;
+    font-weight:400;
+    font-size: 30px;
+    text-align: center;
 }
 
 .item2 h5 {
     font-family: 'Roboto Slab', sans-serif;
-    font-weight:300;
+    font-weight:400;
     font-size: 16px;
+    background-color: lightgrey;
+    position: relative;
+    top: 100px;
+    cursor: pointer;
+    height: 100px;
 }
 
 .item3 h5 {
     font-family: 'Roboto Slab', sans-serif;
-    font-weight:300;
+    font-weight:400;
     font-size: 16px;
+   position: relative;
+    top: 100px;
+    cursor: pointer;
+    height: 100px;
+    background-color: lightgrey;
+}
+
+#container-video img {
+    height: 200px;
+    width: 200px;
+    padding: 16px;
+    background-color: lightgrey;
 }
 
