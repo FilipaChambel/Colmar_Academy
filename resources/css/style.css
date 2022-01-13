@@ -10,6 +10,10 @@
 
 /* Navigation */
 
+header .mobile {
+    display:none;
+}
+
 li, a, button {
     font-family: 'Roboto Slab', sans-serif;
     font-weight: 300;
@@ -85,6 +89,35 @@ button:hover {
     background-color: lightsteelblue;
 }
 
+/* media query */
+
+@media only screen and (max-width: 850px) {
+
+header .logo-image {
+    display: none;
+}
+
+header .nav_links {
+    display: none;
+}
+
+header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    
+  }
+  
+}
+
+
 /* First section */
 
 #banner {
@@ -140,6 +173,22 @@ button:hover {
     background-color: lightgrey;
 }
 
+@media only screen and (max-width: 850px) {
+    #banner img {
+        height:auto;
+        width: 100%;
+        margin: 0;
+    }
+
+    #banner {
+        background-color: lightgrey;
+        width: 100%;
+        display: inline-block;
+        padding: 0;
+        
+        
+    }
+}
 /* Second Section */
 
 #second_section {
@@ -426,4 +475,3 @@ button:hover {
     padding: 16px;
     background-color: lightgrey;
 }
-
