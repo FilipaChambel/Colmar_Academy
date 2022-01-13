@@ -186,8 +186,14 @@ header .mobile ul {
         display: inline-block;
         padding: 0;
         
-        
     }
+
+    .section_one button {
+        position: relative;
+        top: 5px;
+        left: 10%;
+        
+}
 }
 /* Second Section */
 
