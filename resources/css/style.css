@@ -299,7 +299,52 @@ header .mobile ul {
     top: 50%;
 }
 
+@media only screen and (max-width: 850px) {
+
+    #second {
+        display: none;
+        
+    }
+
+    #container-main {
+      
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+
+    #container-main img {
+        display: inline-block;
+        align-self: center;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 16px;
+    }
+
+    #container-main h5 {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .container_one {
+        display: block;
+    }
+
+    .container_two {
+        display: block;
+    }
+
+    .container_three {
+        display: block;
+    }
+}
+
+
 /* Third Second */
+#container-mobile {
+    display: none;
+}
 
 #container-options {
     background-color: lightgrey;
@@ -385,7 +430,49 @@ header .mobile ul {
     
 }
 
+@media only screen and (max-width: 850px) {
+    #container-options {
+        display: none;
+    }
+
+    #container-mobile {
+        display: block;
+        width: 100%;
+    }
+    
+    #container-mobile ul {
+        position: relative;
+        top: 100px;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    #container-mobile h3 {
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    #container-mobile button {
+        background-color: lightgrey;
+        border-radius: 50px;
+        width: 100%;
+        margin: 10px;
+        transition: all 0.3s ease 0s;
+    }
+
+
+    #container-mobile button:hover {
+        background-color: lightsteelblue;
+}
+}
 /* Fourth Section */
+
+#thesis-mobile {
+    display: none;
+}
+
 .item0 {
     grid-column: 2/3;
     grid-row: 1;
@@ -403,6 +490,7 @@ header .mobile ul {
     background-color: lightgrey;
     grid-column: 3;
     grid-row:2;
+    width: 400px;
     height: 300px;
     display: flex;
     flex-direction: row;
@@ -416,6 +504,7 @@ header .mobile ul {
     grid-row: 2;
     position: relative;
     top: 300px;
+    width: 400px;
     height: 300px;
     display: flex;
     flex-direction: row;
@@ -480,4 +569,65 @@ header .mobile ul {
     width: 200px;
     padding: 16px;
     background-color: lightgrey;
+}
+
+@media only screen and (max-width: 850px) {
+    #container-video {
+        display: none;
+    }
+
+    #thesis-mobile {
+        display: block;
+        width: 100%;
+        position: relative;
+        top: 150px;
+    }
+
+    #thesis-mobile h3 {
+        font-size: 40px;
+        font-family: 'Roboto-slab', sans-serif;
+        font-weight: 400;
+        padding: 16px;
+        text-align: center;
+
+    }
+
+    #thesis-mobile video {
+        width: 100%;
+    }
+}
+
+/* Footer */
+
+footer {
+    clear: both;
+    position: relative;
+    height: 40px;
+    margin-top: 250px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   
+}
+
+.copyright {
+    margin-right:auto;
+}
+footer p {
+    font-family: 'Roboto-slab', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 850px) {
+    footer .terms{
+        display: none;
+    }
+
+    footer .copyright {
+        display: absolute;
+        bottom: 0;
+        text-align: center;
+    }
 }
